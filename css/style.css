@@ -17,6 +17,9 @@ body {
 
 
 /* ===== ШАПКА ===== */
+.menu-toggle {
+    display: none;
+}
 
 header {
     width: 100%;
@@ -224,4 +227,210 @@ nav a {
         grid-template-columns: 1fr;
     }
 
+    header{
+        z-index: 10;
+        padding: 15px 20px;
+        position: sticky;
+        top: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        border: none;
+        background: none;
+
+        font-size: 28px;
+        cursor: pointer;
+
+        padding: 5px;
+    }
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        flex-direction: column;
+        gap: 0;
+
+        background: white;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .about {
+    padding: 70px 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+}
+
+.about-image img {
+    height: 300px;
+}
+
+.contacts {
+    padding: 70px 20px;
+}
+
+.contacts h2 {
+    font-size: 32px;
+}
+
+.contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-button {
+    width: 100%;
+}
+
+footer {
+    padding: 25px 20px;
+
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: center;
+}
+}
+
+
+/* МЕНЮШКА */
+
+.nav-menu.active {
+    display: flex;
+}
+
+.nav-menu a {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+}
+
+/* ===== О НАС ===== */
+
+.about {
+    padding: 100px 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-content h2 {
+    margin: 0 0 30px;
+
+    font-size: 40px;
+}
+
+.about-content p {
+    margin: 0 0 20px;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+/* ===== КОНТАКТЫ ===== */
+
+.contacts {
+    padding: 100px 10%;
+
+    background: #222;
+    color: white;
+
+    text-align: center;
+}
+
+.contacts-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contacts h2 {
+    margin: 0 0 25px;
+
+    font-size: 40px;
+}
+
+.contacts p {
+    margin: 0 auto 35px;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-button {
+    padding: 14px 28px;
+
+    background: white;
+    color: #222;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: #ddd;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    padding: 30px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #111;
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
 }

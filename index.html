@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название компании\сайта </title>
+    <title>Название компании | сайт </title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     
     <header>
         <a class="logo" href="#home">НАЗВАНИЕ</a>
-
-        <nav>
+        
+        <button class="menu-toggle" aria-label="Открыть меню">
+            <span>☰</span>
+        </button>
+        
+        <nav class="nav-menu">
             <a href="#home">Главная</a>
             <a href="#services">Услуги</a>
             <a href="#about">О нас</a>
@@ -44,7 +48,7 @@
     <div class="services-grid">
 
         <article class="service-card">
-            <img src="https://picsum.photos/600/400" alt="Услуга 1">
+            <img src="https://loremflickr.com/600/400" alt="Услуга 1">
 
             <div class="service-card-content">
                 <h3>Услуга 1</h3>
@@ -60,7 +64,7 @@
 
 
         <article class="service-card">
-            <img src="https://picsum.photos/601/400" alt="Услуга 2">
+            <img src="https://loremflickr.com/601/400" alt="Услуга 2">
 
             <div class="service-card-content">
                 <h3>Услуга 2</h3>
@@ -78,26 +82,62 @@
 
 </section>
         </section>
+        <div class="about-content">
+        <section id="about" class="about">
+                <h2>
+                    О нас
+                </h2>
 
-        <section id="about">
-            <h2>О нас</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel laboriosam repudiandae! Accusantium rerum quidem rem totam! Libero, quae velit!
+                </p>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel laboriosam repudiandae! Accusantium rerum quidem rem totam! Libero, quae velit!</p>
+            <div class="about-image">
+                
+                <img
+                    src="https://loremflickr.com/700/500"
+                    alt="О нашей компании"
+                >
+
+            </div>
         </section>
 
-        <section id="contacts">
-            <h2>Остались вопросы?</h2>
+        <section class="contacts" id="contacts">
 
-            <p>Свяжитесь с нами!</p>
+            <div class="contacts-content">
 
-            <a href="tel:+79118574269">Позвонить</a>
-            <a href="mailto:dmitrytar19@gmail.com">или написать</a>
-        </section>
+                <h2>Остались вопросы?</h2>
+
+                <p>
+                    Свяжитесь с нами удобным для вас способом.
+                    Мы ответим на ваши вопросы и поможем подобрать
+                подходящее решение.
+                </p>
+
+            <div class="contact-buttons">
+
+                <a class="contact-button" href="tel:+79118574269">
+                    Позвонить
+                </a>
+
+                <a class="contact-button" href="mailto:dmitrytar19@gmail.com">
+                    Написать
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
 
     </main>
 
     <footer>
-        <p>2026 Название компании</p>
+
+        <p>© 2026 Название компании</p>
+
+        <a href="#home">Вернуться наверх ↑</a>
     </footer>
 
     <script src="js/script.js"></script>
